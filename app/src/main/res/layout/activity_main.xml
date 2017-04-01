@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.adityasi.hhaannggmann.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image1"/>
+
+    <TextView
+        android:text="  This is a HANGMAN game , You have to tell the word by guessing the alphabets . A hint will be provided for each word . "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:id="@+id/tv"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="You will enter your guess by clicking on  YOUR GUESS  button, and submit it by clicking  ENTER  button"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:text="play"
+        android:textColor="@android:color/holo_green_dark"
+
+        android:onClick="sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:elevation="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp"
+        android:background="@android:color/holo_orange_light"
+         />
+</RelativeLayout>
