@@ -29,7 +29,7 @@ public class Main2Activity extends AppCompatActivity {
     StringBuilder answer= new StringBuilder("*****");
     Button enter;
     Button guess_bt;
-    //TextView hint;
+    
     String edit2;
     TextView edit;
 
@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private int count=10;
     TextView left;
-    //EditText msg;
+    
 
 
 
@@ -174,70 +174,14 @@ public class Main2Activity extends AppCompatActivity {
 
 
 
-       /* enter = (Button)findViewById(R.id.button4);
-        enter.setOnClickListener(new View.OnClickListener() {
-
-                                     public void onClick(View v) {
-                                         guess = edit2.toString().charAt(0);
-                                         count--;
-                                         left.setText("CHANCES LEFT : " + count);
-
-                                         if (count == 0) {
-                                             msg.setText("YOU WILL BE HANGED!");
-                                             edit.setText(word);
-                                             recreate();
-
-                                         }
-                                         else {
-                                             for (int i = 0; i < word.length(); i++) {
-
-
-                                                 char a = word.charAt(i);
-
-                                                 if (a == guess) {
-                                                     answer.setCharAt(i, guess);
-                                                 }
-
-
-                                             }
-
-                                             edit = (EditText) findViewById(R.id.edit);
-                                             edit.setText("      " + answer);
-                                             //  edit2.setText("");
-                                             if (answer.toString().trim().equals(word.trim())) {
-                                                 msg.setText("Congratulations!! YOU WON");
-                                                 edit.setText(word);
-                                             }
-
-
-                                             edit.setKeyListener(null);
-                                             edit.setTag(hint.getKeyListener());                                            //to set editable text uneditable
-                                             edit.setKeyListener(null);
-                                             edit.setKeyListener((KeyListener) edit.getTag());
-
-
-                                         }
-
-                                     }
-
-        ); */
-
-
+      
 
 }
 
 
         public void buttonClick(View v)
         {
-            //hint = (TextView)findViewById(R.id.editText);
-           // hint.setText(HINT);
-            //hint.requestFocus();
-
-           /* hint.setKeyListener(null);
-            hint.setTag(hint.getKeyListener());                                            //to set editable text uneditable
-            hint.setKeyListener(null);
-            hint.setKeyListener((KeyListener) hint.getTag());*/
-
+            
             AlertDialog.Builder builder = new AlertDialog.Builder(Main2Activity.this);
             builder.setTitle("HINT for the word is ");
             final EditText hnt = new EditText(Main2Activity.this);
